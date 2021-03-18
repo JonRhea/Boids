@@ -2,35 +2,33 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//testing for GitHub
-public class Attractor : MonoBehaviour{
+public class Attractor : MonoBehaviour {
 	static public Vector3 POS = Vector3.zero;
-	
-	[Header("Set in Inspector")]
-	public float radius = 10;
-	public float xPhase = 0.5f;
-	public float yPhase = 0.4f;
-	public float zPhase = 0.1f;
-	
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }//end Start
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }//end Update
-	
+	[Header("Set in Inspector")]
+	public float	radius = 10;
+	public float	xPhase = 0.5f;
+	public float	yPhase = 0.4f;
+	public float	zPhase = 0.1f;
+
+
+	// Use this for initialization
+	void Start () {
+		
+	}
+
 	void FixedUpdate(){
 		Vector3 tPos = Vector3.zero;
 		Vector3 scale = transform.localScale;
-		tPos.x = Mathf.Sin(xPhase * Time.time) * radius * scale.x;
-		tPos.y = Mathf.Sin(yPhase * Time.time) * radius * scale.y;
-		tPos.z = Mathf.Sin(zPhase * Time.time) * radius * scale.z;
+		tPos.x = Mathf.Sin (xPhase * Time.time) * radius * scale.x;
+		tPos.y = Mathf.Sin (yPhase * Time.time) * radius * scale.y;
+		tPos.z = Mathf.Sin (zPhase * Time.time) * radius * scale.z;
 		transform.position = tPos;
 		POS = tPos;
-	}//end FixedUpdate
-}//end Attractor
+	}
+
+	// Update is called once per frame
+	void Update () {
+		
+	}
+}

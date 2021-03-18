@@ -352,8 +352,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bff819bf3d13a59499592ce74eae7613, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boidPrefab: {fileID: 0}
-  boidAnchor: {fileID: 0}
+  boidPrefab: {fileID: 8003236108183113201, guid: 7aeacf9d196f67f41ba4979202152792,
+    type: 3}
+  boidAnchor: {fileID: 898521396}
   numBoids: 100
   spawnRadius: 100
   spawnDelay: 0.1
