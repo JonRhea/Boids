@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//testing for GitHub
 public class Attractor : MonoBehaviour{
 	static public Vector3 POS = Vector3.zero;
 	
